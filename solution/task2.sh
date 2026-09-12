@@ -1,4 +1,4 @@
-FOO="$(find . -name foo.txt)"
-BAR="$(find . -name bar.txt)"
-BAZ="$(find . -name baz.txt)"
+FOO="$(find . -type f -name foo.txt)"
+BAR="$(find . -type f -name bar.txt)"
+BAZ="$(find . -type f -name baz.txt)"
 cat $FOO $BAR $BAZ
